@@ -1,0 +1,142 @@
+// ------------------------------------------------------
+// Variables Globales
+// ------------------------------------------------------
+// Se definen los colores principales utilizados en toda la página
+$color-principal: #121314; // Color de fondo principal (negro profundo)
+$color-secundario: #FFFFFF; // Color secundario (blanco)
+$color-tercer: #000000; // Color terciario (negro)
+
+// ------------------------------------------------------
+// Estilos Globales
+// ------------------------------------------------------
+// Aplican a todos los elementos de la página para resetear estilos predeterminados
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; // Asegura que el padding y el borde se incluyan en las dimensiones del elemento
+}
+
+// ------------------------------------------------------
+// Sección: Header (Logos y Navegación)
+// ------------------------------------------------------
+// Incluye los estilos para la barra de navegación y la sección de logos
+.logos {
+  display: flex;
+  justify-content: flex-end; // Alinea los logos al extremo derecho
+  padding: 8px 48px; // Espaciado interno
+  background-color: $color-tercer; // Fondo negro
+}
+
+.navegacion {
+  padding-left: 48px; // Espaciado interno a la izquierda
+}
+
+// ------------------------------------------------------
+// Sección: Portada
+// ------------------------------------------------------
+// Configura la imagen de portada y el botón principal
+.portada {
+  background-image: url(../img/portada-1.png); // Imagen de fondo para la portada
+  height: 500px; // Altura predeterminada de la portada
+  background-size: cover; // Escala la imagen para cubrir el área completa
+  background-position: center; // Centra la imagen dentro del contenedor
+  display: flex;
+  align-items: flex-end; // Coloca el contenido al final verticalmente
+
+  button {
+    border-radius: 70px; // Botón redondeado
+    margin-bottom: 48px; // Margen inferior del botón
+  }
+}
+
+// ------------------------------------------------------
+// Responsive Design para la portada
+// ------------------------------------------------------
+// Ajusta el tamaño de la portada y los textos en pantallas más pequeñas
+@media (max-width: 992px) {
+  .portada {
+    height: 328px; // Altura para pantallas medianas
+  }
+}
+
+@media (max-width: 576px) {
+  .portada {
+    height: 200px; // Altura para pantallas pequeñas
+  }
+
+  h1 {
+    font-size: 20px; // Título más pequeño en pantallas pequeñas
+  }
+
+  p {
+    font-size: 10px; // Párrafo más pequeño en pantallas pequeñas
+  }
+}
+
+// ------------------------------------------------------
+// Sección: Contenido Derecho (PS5 Info)
+// ------------------------------------------------------
+// Diseña el contenedor derecho con título, párrafo y botones
+.derecha {
+  h2 {
+    margin-top: 48px; // Margen superior del título
+    font-size: 48px; // Tamaño del título
+  }
+}
+
+.boton {
+  border-radius: 70px; // Bordes redondeados para los botones
+}
+
+// ------------------------------------------------------
+// Sección: Juegos
+// ------------------------------------------------------
+// Incluye el diseño de las tarjetas de juegos y su fondo
+.juegos {
+  background-color: $color-principal; // Fondo negro profundo
+}
+
+.img-juegos {
+  width: 278px; // Ancho fijo de las tarjetas
+  height: 278px; // Altura fija de las tarjetas
+  margin-top: 20px; // Espaciado superior entre tarjetas
+  padding: 20px; // Espaciado interno dentro de la tarjeta
+
+  button {
+    font-weight: 800; // Botones con texto en negrita
+  }
+}
+
+.juegos-1 {
+  p {
+    color: $color-secundario; // Texto en color blanco
+    margin-top: 5px; // Espaciado superior del texto
+  }
+}
+
+// ------------------------------------------------------
+// Sección: Título de Juegos PS5
+// ------------------------------------------------------
+// Diseña el encabezado de la sección de juegos
+.titulo-ps5 {
+  h3 {
+    margin: 48px; // Espaciado externo del título
+    color: $color-secundario; // Color blanco para el texto
+    font-size: 48px; // Tamaño grande para el título
+  }
+}
+
+// ------------------------------------------------------
+// Sección: Footer
+// ------------------------------------------------------
+// Configura el pie de página con fondo y texto
+.footer {
+  display: flex; // Flexbox para alinear contenido horizontalmente
+  background-color: $color-tercer; // Fondo negro
+  padding: 10px; // Espaciado interno
+
+  p {
+    color: $color-secundario; // Texto en color blanco
+    margin: 0; // Sin márgenes externos
+  }
+}

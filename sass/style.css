@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logos {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 48px;
+  background-color: #000000;
+}
+
+.navegacion {
+  padding-left: 48px;
+}
+
+.portada {
+  background-image: url(../img/portada-1.png);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+.portada button {
+  border-radius: 70px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 992px) {
+  .portada {
+    height: 328px;
+  }
+}
+@media (max-width: 576px) {
+  .portada {
+    height: 200px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+.derecha h2 {
+  margin-top: 48px;
+  font-size: 48px;
+}
+
+.boton {
+  border-radius: 70px;
+}
+
+.juegos {
+  background-color: #121314;
+}
+
+.img-juegos {
+  width: 278px;
+  height: 278px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.img-juegos button {
+  font-weight: 800;
+}
+
+.juegos-1 p {
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+
+.titulo-ps5 h3 {
+  margin: 48px;
+  color: #FFFFFF;
+  font-size: 48px;
+}
+
+.footer {
+  display: flex;
+  background-color: #000000;
+  padding: 10px;
+}
+.footer p {
+  color: #FFFFFF;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
